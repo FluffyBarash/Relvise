@@ -1,0 +1,65 @@
+// ##############################_Link_##############################
+
+@import "_vars";
+
+// ##############################_Main_##############################
+.github__title {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: -150px;
+  margin-bottom: 150px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  & h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1.25rem, 0.702rem + 2.74vw, 2.5rem);
+    font-weight: 700;
+    line-height: 57px;
+    margin-bottom: 10px;
+  }
+}
+
+.github__info {
+  //   background-color: antiquewhite;
+  margin-bottom: 40px;
+  & h2 {
+    font-size: clamp(1rem, 0.781rem + 1.1vw, 1.5rem);
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  & p {
+    color: $grey;
+    font-size: clamp(0.688rem, 0.386rem + 1.51vw, 1.375rem);
+    // font-size: 11px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
+// ##############################_Main-Adaptive_##############################
+
+// ------------------------------_500px_------------------------------
+
+@media (max-width: 500px) {
+  .github__title {
+    & h1 {
+      line-height: 30px;
+    }
+  }
+  .github__info {
+    & h2 {
+      margin-bottom: 5px;
+    }
+  }
+  .main__container {
+    padding: 0px 20px 0px 20px;
+  }
+  .github__title {
+    padding: 20px 20px 20px 20px;
+  }
+}
